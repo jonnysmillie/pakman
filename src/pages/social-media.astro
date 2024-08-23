@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Social Media">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Social Media</Fragment>
+      <Fragment slot="desc">Crafting Connections, Driving Engagement.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Engage, Inspire, Grow Your Brand.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our social media marketing services are designed to elevate your brand's
+        online presence and foster genuine connections with your audience. We
+        begin by understanding your brand's unique voice and goals, crafting
+        tailored strategies that resonate with your target demographic. From
+        creating visually stunning posts to curating compelling content, our
+        team ensures your brand stays relevant and engaging across all major
+        platforms, including Instagram, Twitter, LinkedIn, and Facebook.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        We specialize in leveraging the latest trends and tools to drive growth,
+        from hashtag campaigns and influencer collaborations to interactive
+        content like polls, quizzes, and stories. Our data-driven approach means
+        every campaign is optimized for maximum impact, with real-time
+        monitoring and adjustments to ensure the best results. Whether you're
+        looking to increase brand awareness, boost engagement, or drive
+        conversions, our social media experts have the skills and creativity to
+        deliver impactful and measurable outcomes for your brand.
+      </p>
+    </div>
+  </Container>
+</Layout>

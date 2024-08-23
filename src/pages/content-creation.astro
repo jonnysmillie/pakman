@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Content Creation">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Content Creation</Fragment>
+      <Fragment slot="desc">Crafting Content That Connects.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Create. Captivate. Convert.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our content creation services are designed to captivate and engage your
+        audience with high-quality, compelling material that aligns with your
+        brand’s voice and goals. We craft content that not only informs but also
+        inspires, ensuring your brand stands out in a crowded digital landscape.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        From blog posts and articles to videos, infographics, and social media
+        content, our team of creative experts produces diverse formats that
+        resonate with your target audience. We take a strategic approach to
+        content creation, focusing on delivering value and driving action while
+        maintaining a consistent and authentic brand message. Our process
+        involves in-depth research, thoughtful planning, and meticulous
+        execution to ensure each piece of content is tailored to meet your
+        specific needs and objectives.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        With our expertise in storytelling and content strategy, we help you
+        build stronger connections with your audience, enhance your online
+        presence, and drive meaningful engagement. Let us transform your ideas
+        into impactful content that elevates your brand and achieves your
+        business goals.
+      </p>
+    </div>
+  </Container>
+</Layout>; ---

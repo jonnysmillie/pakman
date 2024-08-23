@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Social Media">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Guerilla Marketing</Fragment>
+      <Fragment slot="desc">Bold Tactics, Unforgettable Impact.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Disruptive Ideas, Lasting Impressions.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our guerrilla marketing services break through the noise with bold,
+        unconventional tactics designed to capture attention and spark
+        conversations. We specialize in creating memorable, high-impact
+        campaigns that make your brand stand out in unexpected ways. By
+        leveraging creativity and strategic thinking, we turn ordinary moments
+        into extraordinary experiences that engage your target audience and
+        generate buzz.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        From eye-catching street art and viral stunts to interactive
+        installations and surprise pop-ups, our guerrilla marketing team knows
+        how to push boundaries and make a statement. We work closely with you to
+        understand your brand’s essence and goals, then design and execute
+        campaigns that align perfectly with your vision. Our approach is all
+        about creating a lasting impression, driving organic engagement, and
+        amplifying your message through innovative strategies that resonate with
+        audiences and the media alike.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        With our guerrilla marketing expertise, your brand will not only capture
+        attention but also inspire conversations and create memorable
+        experiences.
+      </p>
+    </div>
+  </Container>
+</Layout>
