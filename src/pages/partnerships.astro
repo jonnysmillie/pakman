@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Partnerships">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Partnerships</Fragment>
+      <Fragment slot="desc">Building Connections, Driving Growth.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Strategic Alliances, Amplified Success.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our partnerships services are designed to forge valuable connections and
+        amplify your brand's reach through strategic collaborations. We
+        understand the power of strong, mutually beneficial relationships and
+        work diligently to align your brand with partners that enhance your
+        market presence and drive growth.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        From identifying key industry players and influencers to negotiating and
+        managing partnerships, our team ensures that each collaboration is
+        crafted to meet your business objectives. We specialize in building
+        alliances that not only expand your network but also create
+        opportunities for co-branded campaigns, joint ventures, and
+        cross-promotions. Our approach involves thorough research and strategic
+        planning to select the right partners and develop initiatives that
+        resonate with both your audience and theirs.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        With our expertise in partnership management, we help you unlock new
+        avenues for engagement, boost your brand’s credibility, and drive
+        long-term success through strategic, high-impact relationships.
+      </p>
+    </div>
+  </Container>
+</Layout>; ---
