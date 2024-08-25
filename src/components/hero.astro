@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/abstract.png";
+import background from "assets/background.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
@@ -8,7 +8,6 @@ import { Icon } from "astro-icon/components";
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 order-1 md:block">
-    <!-- Define our SVG clip path -->
     <svg width="0" height="0">
       <defs>
         <clipPath id="cp" clipPathUnits="objectBoundingBox">
@@ -19,7 +18,6 @@ import { Icon } from "astro-icon/components";
       </defs>
     </svg>
 
-    <!-- The actual elements we're using -->
     <div class="triangle-container">
       <div class="triangle first"></div>
       <div class="triangle second"></div>
@@ -44,34 +42,21 @@ import { Icon } from "astro-icon/components";
         rel="noopener">
         <Icon class="text-white w-5 h-5" name="simple-icons:x" />
 
-        Follow
+        Follow us
+      </Link>
+      <Link
+        href="#"
+        href="https://x.com"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        <Icon class="text-white w-5 h-5" name="uil:meeting-board" />
+
+        Book a meeting
       </Link>
     </div>
   </div>
 
-  <style>
-    .loading:after {
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: bottom;
-      -webkit-animation: ellipsis steps(4, end) 2100ms infinite;
-      animation: ellipsis steps(4, end) 2100ms infinite;
-      content: "\2026"; /* ascii code for the ellipsis character */
-      width: 0px;
-    }
-
-    @keyframes ellipsis {
-      to {
-        width: 4.5rem;
-      }
-    }
-
-    @-webkit-keyframes ellipsis {
-      to {
-        width: 4.5rem;
-      }
-    }
-  </style>
   <style lang="scss">
     .triangle-container {
       position: relative;
@@ -102,7 +87,7 @@ import { Icon } from "astro-icon/components";
 
     .first {
       background-color: #c5075c;
-      background-image: url("https://media.giphy.com/media/pE6GG0V2JCKUo/giphy.gif");
+      background-image: url("https://media.giphy.com/media/gZfJz3u1OS1I4/giphy.gif");
 
       transform: translateX(-65%) translateY(-50%);
     }
