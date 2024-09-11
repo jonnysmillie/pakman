@@ -1,0 +1,55 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import xspaces from "assets/xspaces.jpg";
+---
+
+<Layout title="Partnerships">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">X Spaces</Fragment>
+      <Fragment slot="desc">Engage Live, Amplify Your Voice.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <Picture
+        src={xspaces}
+        alt="Astronaut in the air"
+        widths={[200, 400, 600, 1200]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+        class="rounded-lg w-full"
+      />
+      <h2 class="font-bold text-3xl text-gray-800">
+        Real Conversations, Real Connections.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our X Spaces hosting services are designed to create dynamic and
+        interactive discussions that engage your audience in real-time. We
+        specialize in planning, organizing, and moderating live Twitter Spaces,
+        turning conversations into powerful opportunities for brand engagement
+        and community building.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our team works closely with you to develop compelling topics, invite
+        influential speakers, and promote your X Spaces event to maximize reach
+        and participation. From educational panels and Q&A sessions to product
+        launches and industry roundtables, we ensure that every session is
+        well-structured, engaging, and aligned with your brand’s objectives. We
+        also provide post-event analysis to help you measure impact and gather
+        insights that inform future strategies.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Whether you're looking to build brand awareness, foster community
+        interaction, or showcase your expertise, our X Spaces hosting services
+        offer a unique platform to connect with your audience in a meaningful
+        and impactful way. Let us help you create conversations that resonate
+        and drive your brand forward.
+      </p>
+    </div>
+  </Container>
+</Layout>

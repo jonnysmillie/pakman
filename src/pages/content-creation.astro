@@ -1,0 +1,107 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import content from "assets/content.png";
+---
+
+<Layout title="Content Creation">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Content Creation</Fragment>
+      <Fragment slot="desc">Crafting Content That Connects.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="cp" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+            ></path>
+          </clipPath>
+        </defs>
+      </svg>
+
+      <div class="triangle-container">
+        <div class="triangle first"></div>
+        <div class="triangle second"></div>
+      </div>
+      <h2 class="font-bold text-3xl text-gray-800">
+        Create. Captivate. Convert.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Our content creation services are designed to captivate and engage your
+        audience with high-quality, compelling material that aligns with your
+        brand’s voice and goals. We craft content that not only informs but also
+        inspires, ensuring your brand stands out in a crowded digital landscape.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        From blog posts and articles to videos, infographics, and social media
+        content, our team of creative experts produces diverse formats that
+        resonate with your target audience. We take a strategic approach to
+        content creation, focusing on delivering value and driving action while
+        maintaining a consistent and authentic brand message. Our process
+        involves in-depth research, thoughtful planning, and meticulous
+        execution to ensure each piece of content is tailored to meet your
+        specific needs and objectives.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        With our expertise in storytelling and content strategy, we help you
+        build stronger connections with your audience, enhance your online
+        presence, and drive meaningful engagement. Let us transform your ideas
+        into impactful content that elevates your brand and achieves your
+        business goals.
+      </p>
+    </div>
+  </Container>
+</Layout>
+<style lang="scss">
+  .triangle-container {
+    position: relative;
+    width: 100%;
+    height: 25vw;
+    max-height: 25vh;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .triangle {
+    // The actual clipping effect
+    clip-path: url(#cp);
+
+    // Keep it proportional
+    width: 25vw;
+    height: 25vw;
+    max-height: 25vh;
+    max-width: 25vh;
+
+    // Add the styling
+    background-size: cover;
+    background-blend-mode: screen;
+
+    // Center them
+    position: relative;
+    top: 25%;
+    display: block;
+    margin: auto;
+  }
+
+  .first {
+    background-color: #c5075c;
+    background-image: url("https://media.giphy.com/media/sfjfPOe8DKptm/giphy.gif");
+
+    transform: translateX(-15%) translateY(-50%);
+  }
+
+  .second {
+    background-color: #03b897;
+    background-image: url("https://media1.giphy.com/media/pOZhmE42D1WrCWATLK/200.gif");
+
+    transform: translateX(15%) translateY(-150%);
+
+    opacity: 0.8;
+  }
+</style>

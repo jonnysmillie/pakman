@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/abstract.png";
+import background from "assets/background.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
@@ -8,24 +8,30 @@ import { Icon } from "astro-icon/components";
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 order-1 md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-      class="rounded-lg max-w-96"
-    />
+    <svg width="0" height="0">
+      <defs>
+        <clipPath id="cp" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+          ></path>
+        </clipPath>
+      </defs>
+    </svg>
+
+    <div class="triangle-container">
+      <div class="triangle first"></div>
+      <div class="triangle second"></div>
+    </div>
   </div>
-  <div>
+  <div class="py-6 order-0 md:block">
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter loading">
-      Coming soon
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Amplify Influence, Ignite Engagement
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Our new website wil be launching in the coming weeks, watch this space and
-      follow us on X to stay updated.
+      We specialize in dynamic social media strategies, innovative guerrilla
+      marketing, and powerful content creation. From PR articles to influencer
+      partnerships, we amplify your brand's voice and engage your audience.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
@@ -36,31 +42,63 @@ import { Icon } from "astro-icon/components";
         rel="noopener">
         <Icon class="text-white w-5 h-5" name="simple-icons:x" />
 
-        Follow
+        Follow us
+      </Link>
+      <Link
+        href="#"
+        href="https://x.com"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        <Icon class="text-white w-5 h-5" name="uil:meeting-board" />
+
+        Book a meeting
       </Link>
     </div>
   </div>
-  <style>
-    .loading:after {
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: bottom;
-      -webkit-animation: ellipsis steps(4, end) 2100ms infinite;
-      animation: ellipsis steps(4, end) 2100ms infinite;
-      content: "\2026"; /* ascii code for the ellipsis character */
-      width: 0px;
+
+  <style lang="scss">
+    .triangle-container {
+      position: relative;
+      width: 50vw;
+      height: 50vw;
+      max-height: 75vh;
+      max-width: 75vh;
+    }
+    .triangle {
+      // The actual clipping effect
+      clip-path: url(#cp);
+
+      // Keep it proportional
+      width: 50vw;
+      height: 50vw;
+      max-height: 55vh;
+      max-width: 55vh;
+
+      // Add the styling
+      background-size: cover;
+      background-blend-mode: screen;
+
+      // Center them
+      position: absolute;
+      top: 50%;
+      left: 50%;
     }
 
-    @keyframes ellipsis {
-      to {
-        width: 4.5rem;
-      }
+    .first {
+      background-color: #c5075c;
+      background-image: url("https://media.giphy.com/media/pE6GG0V2JCKUo/giphy.gif");
+
+      transform: translateX(-65%) translateY(-50%);
     }
 
-    @-webkit-keyframes ellipsis {
-      to {
-        width: 4.5rem;
-      }
+    .second {
+      background-color: #03b897;
+      background-image: url("https://media1.giphy.com/media/2A75RyXVzzSI2bx4Gj/200.gif");
+
+      transform: translateX(-35%) translateY(-50%);
+
+      opacity: 0.8;
     }
   </style>
 </main>
