@@ -1,8 +1,10 @@
 ---
 import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
+import { Picture } from "astro:assets";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import logo from "../../assets/logo.png";
 
 const menuitems = [
   {
@@ -39,7 +41,12 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Pakman</span>
+          ><Picture
+            src={logo}
+            alt="Pakman Media Logo"
+            class="inline"
+            width="40"
+          /><span class="font-bold text-slate-800">Pakman</span>
           <span class="text-slate-500">Media</span>
         </a>
         <div class="block lg:hidden">
