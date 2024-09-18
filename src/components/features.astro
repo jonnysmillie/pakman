@@ -1,6 +1,8 @@
 ---
 import { Picture } from "astro:assets";
+import Link from "./ui/link.astro";
 import social from "assets/opticalillusion.png";
+import xspaces from "assets/xspaces.jpg";
 ---
 
 <section>
@@ -9,70 +11,151 @@ import social from "assets/opticalillusion.png";
     Our Services
   </h1>
   <div class="card-container">
-    <div class="card">
+    <Link href="/social-media" class="card">
       <h2>Social Media</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
-    </div>
+      <p>Engage, Inspire, Grow Your Brand.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first social-media-first"></div>
+          <div class="triangle second social-media-second"></div>
+        </div>
+      </div>
+    </Link>
     <div class="card">
       <h2>Guerilla Marketing</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Disruptive Ideas, Lasting Impressions.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first guerilla-marketing-first"></div>
+          <div class="triangle second guerilla-marketing-second"></div>
+        </div>
+      </div>
     </div>
     <div class="card">
       <h2>Content Creation</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Create. Captivate. Convert.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first content-creation-first"></div>
+          <div class="triangle second content-creation-second"></div>
+        </div>
+      </div>
     </div>
     <div class="card">
       <h2>Partnerships</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Strategic Alliances, Amplified Success.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first partnerships-first"></div>
+          <div class="triangle second partnerships-second"></div>
+        </div>
+      </div>
     </div>
 
     <div class="card">
       <h2>X Spaces</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Real Conversations, Real Connections.</p>
+      <Picture src={xspaces} alt="img" />
     </div>
     <div class="card">
       <h2>Influencers</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Influence with Authentic Connections.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first influencers-first"></div>
+          <div class="triangle second influencers-second"></div>
+        </div>
+      </div>
     </div>
     <div class="card">
       <h2>Public Relations</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Shape Perception, Build Trust.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first pr-first"></div>
+          <div class="triangle second pr-second"></div>
+        </div>
+      </div>
     </div>
     <div class="card">
       <h2>Web Development</h2>
-      <Picture src={social} alt="img" />
-      <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Augue interdum at
-        erat cursus quis; scelerisque feugiat.
-      </p>
+      <p>Build Better, Engage More.</p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="cp" clipPathUnits="objectBoundingBox">
+              <path
+                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="triangle-container">
+          <div class="triangle first web-development-first"></div>
+          <div class="triangle second web-development-second"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -137,26 +220,6 @@ import social from "assets/opticalillusion.png";
     }
   }
 
-  .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0.5rem;
-    width: 100%;
-    height: 1rem;
-    z-index: 1;
-    background: #feac5e;
-    background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
-    background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
-
-    transform-origin: 0 50%;
-
-    /* scroll animation*/
-    animation: scaleProgress auto linear;
-    animation-timeline: scroll(root);
-  }
-
   @keyframes fade-in {
     from {
       opacity: 0.3;
@@ -176,12 +239,116 @@ import social from "assets/opticalillusion.png";
     background-color: #fff;
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+    color: #000;
+    text-align: left;
     animation: fade-in linear both;
     /* view function */
     animation-timeline: view();
     animation-range: entry 10% entry 80%;
   }
+  .card:hover {
+    border: 5px solid #000;
+    font-weight: bold;
+  }
 </style>
 
-<script></script>
+<style lang="scss">
+  .triangle-container {
+    position: relative;
+    width: 100%;
+    height: 25vw;
+    max-height: 25vh;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .triangle {
+    // The actual clipping effect
+    clip-path: url(#cp);
+
+    // Keep it proportional
+    width: 25vw;
+    height: 25vw;
+    max-height: 25vh;
+    max-width: 25vh;
+
+    // Add the styling
+    background-size: cover;
+    background-blend-mode: screen;
+
+    // Center them
+    position: relative;
+    top: 25%;
+    display: block;
+    margin: auto;
+  }
+
+  .first {
+    background-color: #c5075c;
+    transform: translateX(-15%) translateY(-50%);
+  }
+  .second {
+    background-color: #03b897;
+    transform: translateX(15%) translateY(-150%);
+    opacity: 0.8;
+  }
+  .social-media-first {
+    background-color: #000;
+  }
+  .card:hover .social-media-first {
+    background-image: url("https://media.giphy.com/media/I37Yia4fjd5Be/giphy.gif");
+  }
+
+  .social-media-second {
+    background-color: #000;
+    opacity: 1;
+  }
+  .card:hover .social-media-second {
+    background-image: url("https://media1.giphy.com/media/KX5nwoDX97AtPvKBF6/200.gif");
+    opacity: 0.8;
+  }
+
+  .guerilla-marketing-first {
+    background-image: url("https://media.giphy.com/media/l3vR9fGVYld0bRccw/giphy.gif");
+  }
+
+  .guerilla-marketing-second {
+    background-image: url("https://media1.giphy.com/media/e9Yigktnzq8Wk/200.gif");
+  }
+
+  .content-creation-first {
+    background-image: url("https://media.giphy.com/media/sfjfPOe8DKptm/giphy.gif");
+  }
+
+  .content-creation-second {
+    background-image: url("https://media1.giphy.com/media/pOZhmE42D1WrCWATLK/200.gif");
+  }
+  .partnerships-first {
+    background-image: url("https://media.giphy.com/media/VduFvPwm3gfGO8duNN/giphy.gif");
+  }
+
+  .partnerships-second {
+    background-image: url("https://media1.giphy.com/media/QxHQ4BtLeEGBlWIFTs/200.gif");
+  }
+  .influencers-first {
+    background-image: url("https://media.giphy.com/media/KVZWZQoS0yqfIiTAKq/giphy.gif");
+  }
+
+  .influencers-second {
+    background-image: url("https://media1.giphy.com/media/fUq8ZzDaKv92DrntSp/200.gif");
+  }
+  .pr-first {
+    background-image: url("https://media.giphy.com/media/l4FGxotcT8O9C0d0c/giphy.gif");
+  }
+
+  .pr-second {
+    background-image: url("https://media1.giphy.com/media/p3KDtPmoeqjRN0Ccl6/200.gif");
+  }
+  .web-development-first {
+    background-image: url("https://media.giphy.com/media/7FrOU9tPbgAZtxV5mb/giphy.gif");
+  }
+
+  .web-development-second {
+    background-image: url("https://media1.giphy.com/media/V4NSR1NG2p0KeJJyr5/200.gif");
+  }
+</style>
