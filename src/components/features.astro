@@ -5,160 +5,197 @@ import social from "assets/opticalillusion.png";
 import xspaces from "assets/xspaces.jpg";
 ---
 
-<section>
-  <h1
-    class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
-    Our Services
-  </h1>
-  <div class="card-container">
-    <Link href="/social-media" class="card">
-      <h2>Social Media</h2>
-      <p>Engage, Inspire, Grow Your Brand.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
+<div class="flex flex-col bg-white m-auto p-auto">
+  <h1 class="flex py-5 font-bold text-4xl text-gray-800">Our services</h1>
+  <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+    <div class="flex flex-nowrapml-10">
+      <div class="inline-block px-3">
+        <Link
+          href="/social-media"
+          class="card block max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl !border-black border-0 border-solid hover:border-4 p-4">
+          <h2>Social Media</h2>
+          <p>Engage, Inspire, Grow Your Brand.</p>
+          <div class="flex flex-col gap-3 mx-auto mt-16">
+            <svg width="0" height="0">
+              <defs>
+                <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                  <path
+                    d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                  ></path>
+                </clipPath>
+              </defs>
+            </svg>
 
-        <div class="triangle-container">
-          <div class="triangle first social-media-first"></div>
-          <div class="triangle second social-media-second"></div>
+            <div class="triangle-container">
+              <div class="triangle first social-media-first"></div>
+              <div class="triangle second social-media-second"></div>
+            </div>
+          </div>
+        </Link>
+      </div>
+      <div class="inline-block px-3">
+        <Link href="/guerilla-marketing" class="card">
+          <div
+            class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+            <h2>Guerilla Marketing</h2>
+            <p>Disruptive Ideas, Lasting Impressions.</p>
+            <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <div class="triangle-container">
+                <div class="triangle first guerilla-marketing-first"></div>
+                <div class="triangle second guerilla-marketing-second"></div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </div>
+      <div class="inline-block px-3">
+        <div
+          class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+          <Link href="/content-creation" class="card">
+            <h2>Content Creation</h2>
+            <p>Create. Captivate. Convert.</p>
+            <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <div class="triangle-container">
+                <div class="triangle first content-creation-first"></div>
+                <div class="triangle second content-creation-second"></div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
-    </Link>
-    <div class="card">
-      <h2>Guerilla Marketing</h2>
-      <p>Disruptive Ideas, Lasting Impressions.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
+      <div class="inline-block px-3">
+        <div
+          class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+          <Link href="/partnerships" class="card">
+            <h2>Partnerships</h2>
+            <p>Strategic Alliances, Amplified Success.</p>
+            <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
 
-        <div class="triangle-container">
-          <div class="triangle first guerilla-marketing-first"></div>
-          <div class="triangle second guerilla-marketing-second"></div>
+              <div class="triangle-container">
+                <div class="triangle first partnerships-first"></div>
+                <div class="triangle second partnerships-second"></div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h2>Content Creation</h2>
-      <p>Create. Captivate. Convert.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
-
-        <div class="triangle-container">
-          <div class="triangle first content-creation-first"></div>
-          <div class="triangle second content-creation-second"></div>
+      <div class="inline-block px-3">
+        <div
+          class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+          <Link href="/x-spaces" class="card">
+            <h2>X Spaces</h2>
+            <p>Real Conversations, Real Connections.</p>
+            <Picture src={xspaces} alt="img" />
+          </Link>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h2>Partnerships</h2>
-      <p>Strategic Alliances, Amplified Success.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
+      <div class="inline-block px-3">
+        <div
+          class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+          <Link href="/influencers" class="card">
+            <h2>Influencers</h2>
+            <p>Influence with Authentic Connections.</p>
+            <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
 
-        <div class="triangle-container">
-          <div class="triangle first partnerships-first"></div>
-          <div class="triangle second partnerships-second"></div>
+              <div class="triangle-container">
+                <div class="triangle first influencers-first"></div>
+                <div class="triangle second influencers-second"></div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
-    </div>
+      <div class="inline-block px-3">
+        <div
+          class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+          <Link href="/public-relations" class="card">
+            <h2>Public Relations</h2>
+            <p>Shape Perception, Build Trust.</p>
+            <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
 
-    <div class="card">
-      <h2>X Spaces</h2>
-      <p>Real Conversations, Real Connections.</p>
-      <Picture src={xspaces} alt="img" />
-    </div>
-    <div class="card">
-      <h2>Influencers</h2>
-      <p>Influence with Authentic Connections.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
-
-        <div class="triangle-container">
-          <div class="triangle first influencers-first"></div>
-          <div class="triangle second influencers-second"></div>
+              <div class="triangle-container">
+                <div class="triangle first pr-first"></div>
+                <div class="triangle second pr-second"></div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h2>Public Relations</h2>
-      <p>Shape Perception, Build Trust.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
+      <div class="inline-block px-3">
+        <div
+          class="w-80 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out border-black border-solid hover:border-4 p-4">
+          <Link href="/web-development" class="card">
+            <h2>Web Development</h2>
+            <p>Build Better, Engage More.</p>
+            <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="cp" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
 
-        <div class="triangle-container">
-          <div class="triangle first pr-first"></div>
-          <div class="triangle second pr-second"></div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <h2>Web Development</h2>
-      <p>Build Better, Engage More.</p>
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <svg width="0" height="0">
-          <defs>
-            <clipPath id="cp" clipPathUnits="objectBoundingBox">
-              <path
-                d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z"
-              ></path>
-            </clipPath>
-          </defs>
-        </svg>
-
-        <div class="triangle-container">
-          <div class="triangle first web-development-first"></div>
-          <div class="triangle second web-development-second"></div>
+              <div class="triangle-container">
+                <div class="triangle first web-development-first"></div>
+                <div class="triangle second web-development-second"></div>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <style type="scss">
   * {
@@ -233,21 +270,13 @@ import xspaces from "assets/xspaces.jpg";
   }
 
   .card {
-    width: 100%;
-    max-width: 520px;
-    padding: 16px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    color: #000;
+    color: black;
     text-align: left;
-    animation: fade-in linear both;
-    /* view function */
-    animation-timeline: view();
-    animation-range: entry 10% entry 80%;
+    width: 20rem;
+    height: 15rem;
   }
   .card:hover {
-    border: 5px solid #000;
     font-weight: bold;
   }
 </style>
@@ -267,10 +296,10 @@ import xspaces from "assets/xspaces.jpg";
     clip-path: url(#cp);
 
     // Keep it proportional
-    width: 25vw;
-    height: 25vw;
-    max-height: 25vh;
-    max-width: 25vh;
+    width: 15vw;
+    height: 15vw;
+    max-height: 15vh;
+    max-width: 15vh;
 
     // Add the styling
     background-size: cover;
@@ -278,7 +307,7 @@ import xspaces from "assets/xspaces.jpg";
 
     // Center them
     position: relative;
-    top: 25%;
+    top: 0%;
     display: block;
     margin: auto;
   }
@@ -309,46 +338,101 @@ import xspaces from "assets/xspaces.jpg";
   }
 
   .guerilla-marketing-first {
+    background-color: #000;
+  }
+
+  .card:hover .guerilla-marketing-first {
     background-image: url("https://media.giphy.com/media/l3vR9fGVYld0bRccw/giphy.gif");
   }
 
   .guerilla-marketing-second {
-    background-image: url("https://media1.giphy.com/media/e9Yigktnzq8Wk/200.gif");
+    background-color: #000;
+    opacity: 1;
   }
-
+  .card:hover .guerilla-marketing-second {
+    background-image: url("https://media1.giphy.com/media/e9Yigktnzq8Wk/200.gif");
+    opacity: 0.8;
+  }
   .content-creation-first {
+    background-color: #000;
+  }
+  .card:hover .content-creation-first {
     background-image: url("https://media.giphy.com/media/sfjfPOe8DKptm/giphy.gif");
   }
 
   .content-creation-second {
+    background-color: #000;
+    opacity: 1;
+  }
+  .card:hover .content-creation-second {
     background-image: url("https://media1.giphy.com/media/pOZhmE42D1WrCWATLK/200.gif");
+    opacity: 0.8;
   }
   .partnerships-first {
+    background-color: #000;
+  }
+  .card:hover .partnerships-first {
     background-image: url("https://media.giphy.com/media/VduFvPwm3gfGO8duNN/giphy.gif");
   }
-
   .partnerships-second {
+    background-color: #000;
+    opacity: 1;
+  }
+  .card:hover .partnerships-second {
     background-image: url("https://media1.giphy.com/media/QxHQ4BtLeEGBlWIFTs/200.gif");
+    opacity: 0.8;
   }
   .influencers-first {
+    background-color: #000;
+  }
+  .card:hover .influencers-first {
     background-image: url("https://media.giphy.com/media/KVZWZQoS0yqfIiTAKq/giphy.gif");
   }
-
   .influencers-second {
+    background-color: #000;
+    opacity: 1;
+  }
+  .card:hover .influencers-second {
     background-image: url("https://media1.giphy.com/media/fUq8ZzDaKv92DrntSp/200.gif");
+    opacity: 0.8;
   }
   .pr-first {
+    background-color: #000;
+  }
+  .card:hover .pr-first {
     background-image: url("https://media.giphy.com/media/l4FGxotcT8O9C0d0c/giphy.gif");
   }
-
   .pr-second {
+    background-color: #000;
+    opacity: 1;
+  }
+  .card:hover .pr-second {
     background-image: url("https://media1.giphy.com/media/p3KDtPmoeqjRN0Ccl6/200.gif");
+    opacity: 0.8;
   }
   .web-development-first {
+    background-color: #000;
+  }
+  .card:hover .web-development-first {
     background-image: url("https://media.giphy.com/media/7FrOU9tPbgAZtxV5mb/giphy.gif");
   }
-
   .web-development-second {
+    background-color: #000;
+    opacity: 1;
+  }
+  .card:hover .web-development-second {
     background-image: url("https://media1.giphy.com/media/V4NSR1NG2p0KeJJyr5/200.gif");
+    opacity: 0.8;
+  }
+</style>
+
+<!-- Styles for horizontal scroll -->
+<style>
+  .hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
   }
 </style>
