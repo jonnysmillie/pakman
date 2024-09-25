@@ -8,7 +8,7 @@ import xspaces from "assets/xspaces.jpg";
 <div class="flex flex-col bg-white m-auto p-auto">
   <h1 class="flex py-5 font-bold text-4xl text-gray-800">Our services</h1>
   <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
-    <div class="flex flex-nowrapml-10 snap-x">
+    <div class="flex-none flex-nowrap ml-10 snap-x snap-mandatory">
       <div class="inline-block px-3 snap-center">
         <Link
           href="/social-media"
@@ -269,6 +269,9 @@ import xspaces from "assets/xspaces.jpg";
     text-align: left;
     width: 20rem;
     height: 15rem;
+    @media (max-width: 650px) {
+    width: 100vw
+  }
   }
   .card:hover {
     font-weight: bold;
@@ -294,6 +297,12 @@ import xspaces from "assets/xspaces.jpg";
     height: 15vw;
     max-height: 15vh;
     max-width: 15vh;
+    @media (max-width: 650px) {
+    width: 30vw;
+    height: 30vw;
+    max-height: 30vh;
+    max-width: 30vh;
+    }
 
     // Add the styling
     background-size: cover;
