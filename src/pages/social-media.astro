@@ -4,6 +4,8 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
 import social from "assets/social.png";
 ---
 
@@ -41,16 +43,28 @@ import social from "assets/social.png";
         team ensures your brand stays relevant and engaging across all major
         platforms, including Instagram, Twitter, LinkedIn, and Facebook.
       </p>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We specialize in leveraging the latest trends and tools to drive growth,
-        from hashtag campaigns and influencer collaborations to interactive
-        content like polls, quizzes, and stories. Our data-driven approach means
-        every campaign is optimized for maximum impact, with real-time
-        monitoring and adjustments to ensure the best results. Whether you're
-        looking to increase brand awareness, boost engagement, or drive
-        conversions, our social media experts have the skills and creativity to
-        deliver impactful and measurable outcomes for your brand.
-      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <Link
+          href="#"
+          href="https://x.com"
+          target="_blank"
+          class="flex gap-1 items-center justify-center"
+          rel="noopener">
+          <Icon class="text-white w-5 h-5" name="uil:meeting-board" />
+
+          Discuss your social media strategy
+        </Link>
+        <Link
+          href="#"
+          href="https://x.com"
+          target="_blank"
+          class="flex gap-1 items-center justify-center"
+          rel="noopener">
+          <Icon class="text-white w-5 h-5" name="simple-icons:x" />
+
+          Join us on X
+        </Link>
+      </div>
     </div>
   </Container>
 </Layout>
