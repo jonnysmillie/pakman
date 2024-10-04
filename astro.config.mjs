@@ -6,6 +6,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pakmanmedia.netlify.app",
+  site: "https://pakman.media",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
 });
